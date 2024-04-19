@@ -18,6 +18,24 @@ It uses Cosmos-SDK's [simapp](https://github.com/cosmos/cosmos-sdk/tree/main/sim
 
 **Note**: Requires [Go 1.22.1](https://go.dev/dl/)
 
+## if you get shell make install error
+
+```shell
+echo $PATH
+```
+
+If /Users/admin/go/bin/ is not included in the PATH, you can add it temporarily for testing purposes using:
+
+```shell
+export PATH=$PATH:/Users/admin/go/bin/
+```
+
+change mode of execution, then initialize script
+
+```shell
+chmod +x scripts/init.sh
+```
+
 ## Installing / Getting started
 
 Build and install the ```rollapp-evm``` binary:
