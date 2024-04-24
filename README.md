@@ -43,6 +43,7 @@ Build and install the ```rollapp-evm``` binary:
 ```shell
 make install
 ```
+rollapp-evm tx bank send [from_key_or_address] 0xDED615Af8C5b5863e735bb42aD2C6D29e8caAbC0
 
 ### Initial configuration
 
@@ -51,9 +52,9 @@ export the following variables:
 ```shell
 export EXECUTABLE="rollapp-evm"
 
-export ROLLAPP_CHAIN_ID="rollappevm_1234-1"
-export KEY_NAME_ROLLAPP="rol-user"
-export BASE_DENOM="arax"
+export ROLLAPP_CHAIN_ID="berlin_8244048-1"
+export KEY_NAME_ROLLAPP="user1"
+export BASE_DENOM="BNR"
 export DENOM=$(echo "$BASE_DENOM" | sed 's/^.//')
 export MONIKER="$ROLLAPP_CHAIN_ID-sequencer"
 

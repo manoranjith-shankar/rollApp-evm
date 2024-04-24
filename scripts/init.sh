@@ -80,7 +80,7 @@ if [ -z "$KEY_NAME_ROLLAPP" ]; then
 fi
 
 # ------------------------------- init rollapp ------------------------------- #
-"$EXECUTABLE" init "$MONIKER" --chain-id "$ROLLAPP_CHAIN_ID"
+"$EXECUTABLE" init "$MONIKER" --chain-id "$ROLLAPP_CHAIN_ID" --home "$ROLLAPP_HOME_DIR"
 
 # ------------------------------- client config ------------------------------ #
 "$EXECUTABLE" config chain-id "$ROLLAPP_CHAIN_ID"
